@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= "Hoeengbot - 최강의 디스코드 봇" %></title>
+    <title>휑봇 (Hoeengbot) - 디스코드의 새로운 기준</title>
     
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://em-content.zobj.net data:; connect-src 'self';">
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -11,129 +11,101 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Pretendard:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Pretendard:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        .font-black-han { font-family: 'Black Han Sans', sans-serif; }
-        .font-pretendard { font-family: 'Pretendard', sans-serif; }
-        
         .animate-on-scroll {
             opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform: translateY(20px);
+            transition: all 0.5s ease-out;
         }
-        
         .animate-on-scroll.show {
             opacity: 1;
             transform: translateY(0);
         }
-
-        .marquee {
-            overflow: hidden;
-            white-space: nowrap;
-            background: #000;
-            color: #fff;
-            padding: 10px 0;
-            font-weight: bold;
-        }
-
-        .marquee-content {
-            display: inline-block;
-            animation: marquee 20s linear infinite;
-        }
-
-        @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
     </style>
 </head>
-<body class="font-pretendard overflow-x-hidden">
-    <div class="marquee border-b-4 border-black">
-        <div class="marquee-content uppercase text-lg">
-            ⚡ NEW DISCORD BOT HOEENGBOT IS HERE! ⚡ TRY NOW! ⚡ COOL MZ STYLE DESIGN ⚡ 휑봇과 함께 즐거운 디스코드 생활을 시작하세요! ⚡
+<body class="font-pretendard antialiased bg-off-white">
+    <nav class="fixed top-0 w-full z-50 bg-off-white/80 backdrop-blur-md border-b-2 border-black">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
+            <div class="text-xl font-black tracking-tighter">HOEENGBOT</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#invite" class="nav-link">Invite</a>
+                <a href="#legal" class="nav-link">Legal</a>
+            </div>
+            <a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot" class="neo-btn-primary py-1.5 px-4 text-sm shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">INVITE</a>
         </div>
-    </div>
-
-    <nav class="p-6 flex justify-between items-center sticky top-0 z-50 bg-neo-yellow/80 backdrop-blur-sm border-b-4 border-black">
-        <div class="text-3xl font-black-han">HOEENGBOT</div>
-        <div class="hidden md:flex space-x-8 font-bold text-xl">
-            <a href="#features" class="hover:underline">FEATURES</a>
-            <a href="#about" class="hover:underline">ABOUT</a>
-            <a href="#invite" class="hover:underline">INVITE</a>
-        </div>
-        <a href="#" class="neo-btn py-2 px-4 text-sm">LOGIN</a>
     </nav>
 
-    <header class="min-h-screen flex flex-col justify-center items-center text-center p-8 bg-neo-pink">
-        <div class="neo-box bg-white max-w-4xl animate-on-scroll">
-            <h1 class="text-5xl md:text-8xl font-black-han mb-6 leading-tight">
-                디스코드를 더 <span class="bg-neo-lime px-2">힙하게</span><br>
-                만들어줄 <span class="underline decoration-wavy decoration-neo-blue">휑봇</span>
+    <header class="pt-40 pb-20 px-6 max-w-7xl mx-auto text-center">
+        <div class="animate-on-scroll">
+            <h1 class="text-6xl md:text-8xl font-black tracking-tight mb-6 leading-none">
+                디스코드의 경험을<br><span class="text-brand-primary">혁신하다.</span>
             </h1>
-            <p class="text-xl md:text-2xl font-bold mb-8">
-                단순한 봇이 아닙니다. 당신의 디스코드 커뮤니티에 활력을 불어넣는 트렌디한 파트너.
+            <p class="text-xl md:text-2xl font-medium text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                강력한 기능, 직관적인 UI, 안정적인 성능.<br>휑봇과 함께 당신의 커뮤니티를 완성하세요.
             </p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#" class="neo-btn bg-neo-lime">지금 초대하기 🔥</a>
-                <a href="#" class="neo-btn bg-neo-blue">커뮤니티 참가 🤟</a>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot" class="neo-btn-primary">봇 초대하기</a>
+                <a href="https://discord.gg/your-invite" class="neo-btn-secondary">서버 가입하기</a>
             </div>
         </div>
-        <div class="mt-12 text-6xl animate-bounce">✨</div>
     </header>
 
-    <section id="features" class="py-20 px-8 bg-neo-lime">
-        <h2 class="text-4xl md:text-6xl font-black-han text-center mb-16 animate-on-scroll">핵심 기능들 📂</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            <% const features = [
-                { title: '빠른 반응속도', desc: '초고속 엔진으로 당신의 명령을 즉시 실행합니다.', color: 'bg-white', icon: '⚡' },
-                { title: '감각적인 UI', desc: '디자인부터 남다른 임베드와 상호작용.', color: 'bg-neo-blue', icon: '🎨' },
-                { title: '다양한 게임', desc: '디스코드 안에서 즐기는 다양한 미니게임들.', color: 'bg-neo-pink', icon: '🎮' }
-            ]; %>
-            
-            <% features.forEach(f => { %>
-                <div class="neo-box <%= f.color %> animate-on-scroll">
-                    <div class="text-5xl mb-4"><%= f.icon %></div>
-                    <h3 class="text-2xl font-black-han mb-2"><%= f.title %></h3>
-                    <p class="font-bold"><%= f.desc %></p>
-                </div>
-            <% }); %>
-        </div>
-    </section>
-
-    <section class="py-20 px-8 bg-neo-yellow overflow-hidden">
-        <div class="flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto">
-            <div class="w-full md:w-1/2 neo-box bg-neo-blue animate-on-scroll">
-                <h2 class="text-4xl font-black-han mb-6">왜 휑봇인가요? 🤔</h2>
-                <ul class="space-y-4 font-bold text-lg">
-                    <li>✅ 24/7 중단 없는 서비스</li>
-                    <li>✅ 사용자 맞춤형 설정 가능</li>
-                    <li>✅ 지속적인 업데이트와 기능 추가</li>
-                    <li>✅ 친절한 한국어 지원</li>
-                </ul>
-            </div>
-            <div class="w-full md:w-1/2 relative animate-on-scroll">
-                <div class="neo-box bg-white rotate-3">
-                    <img src="https://images.unsplash.com/photo-1614680376593-902f74cc0d41?w=800&auto=format&fit=crop&q=60" 
-                         alt="Discord Illustration" 
-                         crossorigin="anonymous"
-                         class="w-full h-auto grayscale hover:grayscale-0 transition-all">
-                </div>
-                <div class="absolute -top-4 -right-4 text-8xl">💎</div>
+    <section id="features" class="py-24 px-6 bg-white border-y-2 border-black">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-black mb-16 text-center underline decoration-4 decoration-brand-primary underline-offset-8">CORE FEATURES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <% const features = [
+                    { title: 'Ultra Fast', desc: '지연 없는 실시간 반응 속도를 경험하세요.', icon: '⚡' },
+                    { title: 'Interactive UI', desc: '사용자 친화적인 임베드와 버튼 인터페이스.', icon: '🖱️' },
+                    { title: 'Rich Content', desc: '음악, 관리, 게임 등 모든 필수 기능 통합.', icon: '🍱' }
+                ]; %>
+                <% features.forEach(f => { %>
+                    <div class="neo-card animate-on-scroll">
+                        <div class="text-4xl mb-6"><%= f.icon %></div>
+                        <h3 class="text-2xl font-bold mb-3"><%= f.title %></h3>
+                        <p class="text-gray-600 font-medium leading-relaxed"><%= f.desc %></p>
+                    </div>
+                <% }); %>
             </div>
         </div>
     </section>
 
-    <footer class="bg-black text-white py-12 px-8 border-t-8 border-neo-lime">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+    <section id="legal" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="animate-on-scroll">
+                <h3 class="text-2xl font-black mb-4 uppercase">Terms of Service</h3>
+                <div class="neo-card bg-gray-50 h-48 overflow-y-auto text-sm text-gray-600 font-medium p-4 border-black border-2">
+                    <p class="mb-2">제 1조 (목적)</p>
+                    <p>본 약관은 휑봇(이하 "봇")이 제공하는 모든 서비스의 이용 조건 및 절차를 규정함을 목적으로 합니다.</p>
+                    <p class="mt-4 mb-2">제 2조 (서비스 이용)</p>
+                    <p>사용자는 디스코드 정책 및 봇의 운영 방침을 준수해야 하며, 부적절한 사용 시 이용이 제한될 수 있습니다.</p>
+                    <p class="mt-4 italic text-xs">더 자세한 내용은 디스코드 서버를 통해 문의해 주세요.</p>
+                </div>
+            </div>
+            <div class="animate-on-scroll">
+                <h3 class="text-2xl font-black mb-4 uppercase">Privacy Policy</h3>
+                <div class="neo-card bg-gray-50 h-48 overflow-y-auto text-sm text-gray-600 font-medium p-4 border-black border-2">
+                    <p class="mb-2">개인정보 처리방침</p>
+                    <p>휑봇은 사용자의 데이터를 최소한으로 수집하며, 수집된 정보는 서비스 제공 목적 이외의 용도로 사용되지 않습니다.</p>
+                    <p class="mt-4 mb-2">수집 항목</p>
+                    <p>서버 ID, 사용자 ID (명령어 실행 및 설정 저장 목적).</p>
+                    <p class="mt-4 italic text-xs">당사는 사용자의 대화 내용을 저장하지 않습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-secondary text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
             <div class="text-center md:text-left">
-                <div class="text-4xl font-black-han mb-2">HOEENGBOT</div>
-                <p class="text-gray-400 font-bold">© 2026 HOEENGBOT. All rights reserved.</p>
+                <div class="text-3xl font-black tracking-tighter mb-2">HOEENGBOT</div>
+                <p class="text-gray-400 text-sm font-bold">© 2026 HOEENGBOT. Designed for Community.</p>
             </div>
-            <div class="flex gap-6 text-2xl">
-                <a href="https://discord.gg/your-invite" target="_blank" rel="noopener noreferrer" class="hover:text-neo-lime transition-colors">DISCORD</a>
-                <a href="https://github.com/hoehoetvhss/hoeengbot-website" target="_blank" rel="noopener noreferrer" class="hover:text-neo-pink transition-colors">GITHUB</a>
-                <a href="https://twitter.com/your-handle" target="_blank" rel="noopener noreferrer" class="hover:text-neo-yellow transition-colors">TWITTER</a>
+            <div class="flex gap-8 font-bold text-sm tracking-widest uppercase">
+                <a href="https://discord.gg/your-invite" target="_blank" rel="noopener noreferrer" class="hover:text-brand-primary transition-colors">Discord</a>
+                <a href="https://github.com/hoehoetvhss/hoeengbot-website" target="_blank" rel="noopener noreferrer" class="hover:text-brand-primary transition-colors">Github</a>
             </div>
         </div>
     </footer>
