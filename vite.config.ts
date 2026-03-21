@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 import { ViteEjsPlugin } from "vite-plugin-ejs";
 
 export default defineConfig({
-  base: "/hoeengbot-website/",
+  base: "/",
   plugins: [tailwindcss(), ViteEjsPlugin()],
   root: "src",
   build: {
