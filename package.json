@@ -1,0 +1,36 @@
+{
+  "name": "hoeengbot-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "type-check": "tsc --noEmit",
+    "build": "npm run type-check && npm run lint && vite build",
+    "preview": "vite preview",
+    "lint": "biome check src/main.ts src/style.css vite.config.ts",
+    "format": "biome format --write src/main.ts src/style.css vite.config.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoehoetvhss/hoeengbot-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hoehoetvhss/hoeengbot-website/issues"
+  },
+  "homepage": "https://github.com/hoehoetvhss/hoeengbot-website#readme",
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.8",
+    "@tailwindcss/vite": "^4.2.2",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.1",
+    "vite-plugin-ejs": "^1.7.0"
+  }
+}
