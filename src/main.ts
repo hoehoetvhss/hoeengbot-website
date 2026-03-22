@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const copyrightYear = document.getElementById("copyright-year");
   if (copyrightYear) {
     const currentYear = new Date().getFullYear();
-    copyrightYear.textContent = `2023 - ${currentYear}`;
+    copyrightYear.textContent = `2023-${currentYear}`;
   }
 });
