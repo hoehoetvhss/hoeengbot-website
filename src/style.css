@@ -1,14 +1,41 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'SeoulNotice';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/SeoulAlrimTTF-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SeoulNotice';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/SeoulAlrimTTF-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SeoulNotice';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/SeoulAlrimTTF-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SeoulNotice';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/SeoulAlrimTTF-Heavy.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
 @theme {
   --color-brand-primary: #6366f1;
   --color-brand-secondary: #111827;
   --color-off-white: #f9fafb;
+  --font-seoul: 'SeoulNotice', sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-off-white text-brand-secondary font-sans selection:bg-brand-primary selection:text-white;
+    @apply bg-off-white text-brand-secondary selection:bg-brand-primary selection:text-white;
+    font-family: var(--font-seoul);
     -webkit-font-smoothing: antialiased;
   }
 }

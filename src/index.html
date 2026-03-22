@@ -9,22 +9,8 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Pretendard:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.5s ease-out;
-        }
-        .animate-on-scroll.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
 </head>
-<body class="font-pretendard antialiased bg-off-white">
+<body class="antialiased bg-off-white">
     <nav class="fixed top-0 w-full z-50 bg-off-white/80 backdrop-blur-md border-b-2 border-black">
         <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
             <div class="text-xl font-black tracking-tighter">HOENG BOT</div>
@@ -37,14 +23,13 @@
     <header class="pt-40 pb-20 px-6 max-w-7xl mx-auto text-center">
         <div class="animate-on-scroll">
             <h1 class="text-6xl md:text-8xl font-black tracking-tight mb-6 leading-none">
-                디스코드의 경험을<br><span class="text-brand-primary">혁신하다.</span>
+                음악의 즐거움을<br><span class="text-brand-primary">더하다.</span>
             </h1>
             <p class="text-xl md:text-2xl font-medium text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                강력한 기능, 직관적인 UI, 안정적인 성능.<br>호엥봇과 함께 당신의 커뮤니티를 완성하세요.
+                hmes98318의 Music_Disc를 기반으로 운영되는 음악 봇으로<br>유튜브, 스포티파이의 음악을 한국 서버에서 완벽하게 즐기세요.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://discord.com/oauth2/authorize?client_id=1073675618115387422" class="neo-btn-primary">봇 초대하기</a>
-                <a href="https://discord.gg/your-invite" class="neo-btn-secondary">서버 가입하기</a>
+                <a href="https://discord.gg/HMFyw4xeeV" class="neo-btn-primary">서버 가입하기</a>
             </div>
         </div>
     </header>
@@ -54,9 +39,9 @@
             <h2 class="text-4xl font-black mb-16 text-center underline decoration-4 decoration-brand-primary underline-offset-8">CORE FEATURES</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <% const features = [
-                    { title: 'Ultra Fast', desc: '지연 없는 실시간 반응 속도를 경험하세요.', icon: '⚡' },
-                    { title: 'Interactive UI', desc: '사용자 친화적인 임베드와 버튼 인터페이스.', icon: '🖱️' },
-                    { title: 'Rich Content', desc: '음악, 관리, 게임 등 모든 필수 기능 통합.', icon: '🍱' }
+                    { title: 'High Quality', desc: '유튜브, 스포티파이 등 다양한 플랫폼의 고음질 음악 재생.', icon: '🎵' },
+                    { title: 'Music_Disc', desc: 'hmes98318의 검증된 소스를 기반으로 한 안정적인 성능.', icon: '💿' },
+                    { title: 'Korea Optimized', desc: '한국 디스코드 서버 환경에 최적화된 빠른 반응 속도.', icon: '🇰🇷' }
                 ]; %>
                 <% features.forEach(f => { %>
                     <div class="neo-card animate-on-scroll">
