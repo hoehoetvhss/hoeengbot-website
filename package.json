@@ -15,14 +15,9 @@
     "type": "git",
     "url": "git+https://github.com/hoehoetvhss/hoeengbot-website.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "hoehoetvhs",
   "license": "MIT",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/hoehoetvhss/hoeengbot-website/issues"
-  },
-  "homepage": "https://github.com/hoehoetvhss/hoeengbot-website#readme",
   "devDependencies": {
     "@biomejs/biome": "^2.4.8",
     "@tailwindcss/vite": "^4.2.2",
