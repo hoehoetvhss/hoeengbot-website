@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>휑봇 (Hoeengbot) - 디스코드의 새로운 기준</title>
+    <title>호엥봇 (hoeng Bot)</title>
     
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://em-content.zobj.net data:; connect-src 'self';">
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -43,7 +43,7 @@
                 디스코드의 경험을<br><span class="text-brand-primary">혁신하다.</span>
             </h1>
             <p class="text-xl md:text-2xl font-medium text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                강력한 기능, 직관적인 UI, 안정적인 성능.<br>휑봇과 함께 당신의 커뮤니티를 완성하세요.
+                강력한 기능, 직관적인 UI, 안정적인 성능.<br>호엥봇과 함께 당신의 커뮤니티를 완성하세요.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot" class="neo-btn-primary">봇 초대하기</a>
@@ -76,22 +76,94 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div class="animate-on-scroll">
                 <h3 class="text-2xl font-black mb-4 uppercase">Terms of Service</h3>
-                <div class="neo-card bg-gray-50 h-48 overflow-y-auto text-sm text-gray-600 font-medium p-4 border-black border-2">
-                    <p class="mb-2">제 1조 (목적)</p>
-                    <p>본 약관은 휑봇(이하 "봇")이 제공하는 모든 서비스의 이용 조건 및 절차를 규정함을 목적으로 합니다.</p>
-                    <p class="mt-4 mb-2">제 2조 (서비스 이용)</p>
-                    <p>사용자는 디스코드 정책 및 봇의 운영 방침을 준수해야 하며, 부적절한 사용 시 이용이 제한될 수 있습니다.</p>
-                    <p class="mt-4 italic text-xs">더 자세한 내용은 디스코드 서버를 통해 문의해 주세요.</p>
+                <div class="neo-card bg-gray-50 h-96 overflow-y-auto text-sm text-gray-600 font-medium p-6 border-black border-2">
+                    <p class="mb-4">본 약관은 hoeng Bot(이하 "봇")을 이용함에 있어 운영자와 이용자의 권리, 의무 및 책임 사항을 규정함을 목적으로 합니다.</p>
+                    
+                    <h4 class="font-bold text-brand-secondary mt-6 mb-2">제1조 (약관의 동의 및 변경)</h4>
+                    <ul class="list-disc pl-5 space-y-1 mb-4">
+                        <li>이용자가 "봇"을 서버에 초대하거나 명령어를 사용함과 동시에 본 약관에 동의한 것으로 간주합니다.</li>
+                        <li>운영자는 관련 법령을 위배하지 않는 범위 내에서 본 약관을 개정할 수 있으며, 변경된 약관은 서비스 내 공지 후 즉시 효력이 발생합니다.</li>
+                    </ul>
+
+                    <h4 class="font-bold text-brand-secondary mt-6 mb-2">제2조 (서비스의 제공 및 제한)</h4>
+                    <ul class="list-disc pl-5 space-y-1 mb-4">
+                        <li>"봇"은 디스코드 플랫폼 내에서 음악 스트리밍 및 관련 편의 기능을 제공합니다.</li>
+                        <li>운영자는 시스템 점검, 교체 및 고장, 통신 두절 등의 사유가 발생한 경우 서비스 제공을 일시적으로 중단할 수 있습니다.</li>
+                        <li>다음 각 호에 해당하는 경우 서비스 이용이 제한되거나 차단될 수 있습니다.
+                            <ul class="list-[circle] pl-5 mt-1">
+                                <li>서비스의 취약점을 이용한 공격 또는 악의적인 시스템 부하 유발</li>
+                                <li>디스코드 서비스 약관(ToS) 및 가이드라인을 위반하는 행위</li>
+                                <li>봇의 정상적인 운영을 방해하는 자동화 도구의 무단 사용</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4 class="font-bold text-brand-secondary mt-6 mb-2">제3조 (외부 플랫폼 서비스 이용)</h4>
+                    <ul class="list-disc pl-5 space-y-1 mb-4">
+                        <li>본 서비스는 YouTube, Spotify, SoundCloud 등 외부 플랫폼의 API를 활용합니다.</li>
+                        <li>이용자는 본 서비스 이용 시 각 외부 플랫폼의 이용약관 및 정책을 함께 준수해야 합니다.</li>
+                    </ul>
+
+                    <h4 class="font-bold text-brand-secondary mt-6 mb-2">제4조 (책임의 제한 및 면책)</h4>
+                    <ul class="list-disc pl-5 space-y-1 mb-4">
+                        <li>"봇"은 외부 콘텐츠의 가용성, 품질 또는 적법성에 대해 보증하지 않습니다.</li>
+                        <li>운영자는 천재지변, 외부 플랫폼(Discord 등)의 장애 등 불가항력적인 사유로 발생한 손해에 대해 책임을 지지 않습니다.</li>
+                        <li>본 서비스는 "있는 그대로(As-is)" 제공되며, 서비스 이용 중 발생한 데이터 손실이나 정신적 피해 등에 대해 운영자는 보상 의무가 없습니다.</li>
+                    </ul>
+
+                    <h4 class="font-bold text-brand-secondary mt-6 mb-2">제5조 (문의)</h4>
+                    <p class="mb-4">본 서비스와 약관에 대해서 궁금한 점이 있다면 <a href="mailto:hoehoetvhs@kakao.com" class="text-brand-primary underline">이메일</a>과 <a href="https://discord.gg/HMFyw4xeeV" class="text-brand-primary underline" target="_blank">디스코드 서버</a>를 통해서 제공받으실 수 있습니다.</p>
+
+                    <div class="mt-8 pt-4 border-t border-gray-200 text-xs text-gray-400">
+                        <p>공고일자: 2026년 3월 22일</p>
+                        <p>시행일자: 2026년 3월 22일</p>
+                    </div>
                 </div>
             </div>
             <div class="animate-on-scroll">
                 <h3 class="text-2xl font-black mb-4 uppercase">Privacy Policy</h3>
-                <div class="neo-card bg-gray-50 h-48 overflow-y-auto text-sm text-gray-600 font-medium p-4 border-black border-2">
-                    <p class="mb-2">개인정보 처리방침</p>
-                    <p>휑봇은 사용자의 데이터를 최소한으로 수집하며, 수집된 정보는 서비스 제공 목적 이외의 용도로 사용되지 않습니다.</p>
-                    <p class="mt-4 mb-2">수집 항목</p>
-                    <p>서버 ID, 사용자 ID (명령어 실행 및 설정 저장 목적).</p>
-                    <p class="mt-4 italic text-xs">당사는 사용자의 대화 내용을 저장하지 않습니다.</p>
+                <div class="neo-card bg-gray-50 h-96 overflow-y-auto text-sm text-gray-600 font-medium p-6 border-black border-2">
+                    <p class="mb-4">hoeng Bot(이하 "봇")은 이용자의 개인정보를 소중하게 다루며, 관련 법령을 준수하여 안전하게 관리하고 있습니다.</p>
+
+                    <h4 class="font-bold text-brand-secondary mt-6 mb-2">1. 개인정보 수집 항목 및 방법</h4>
+                    <p class="mb-2">"봇"은 서비스 제공을 위해 필요한 최소한의 정보만을 수집합니다.</p>
+                    <ul class="list-disc pl-5 space-y-1 mb-4">
+                        <li><strong>수집 항목:</strong> 디스코드 사용자 ID(Snowflake), 서버 ID, 채널 ID, 명령어 실행 기록(로그), 재생된 콘텐츠의 URL.</li>
+                        <li><strong>수집 방법:</strong> 디스코드 API를 통해 자동으로 수집되거나 이용자의 명령어 입력을 통해 수집됩니다.</li>
+                    </ul>
+
+                    <h4 class="font-bold text-brand-secondary mt-6 mb-2">2. 개인정보의 이용 목적</h4>
+                    <p class="mb-2">수집된 정보는 다음의 목적으로만 이용됩니다.</p>
+                    <ul class="list-disc pl-5 space-y-1 mb-4">
+                        <li>음악 재생 및 대기열(Queue) 관리 기능 제공</li>
+                        <li>서비스 오류 진단 및 시스템 최적화</li>
+                        <li>서비스 부정 이용 방지 및 보안 유지</li>
+                    </ul>
+
+                    <h4 class="font-bold text-brand-secondary mt-6 mb-2">3. 개인정보의 보관 및 파기</h4>
+                    <ul class="list-disc pl-5 space-y-1 mb-4">
+                        <li><strong>주기적 파기 방식:</strong> "봇"은 이용자의 프라이버시 보호를 위해 수집된 모든 개인 데이터 및 로그를 <strong>최대 1개월(30일)</strong>을 넘기지 않고 주기적으로 파기합니다.</li>
+                        <li><strong>파기 시점:</strong> 모든 데이터는 생성 시점으로부터 한 달 이내에 시스템에서 일괄적으로 자동 삭제되며, 별도의 즉시 파기 절차는 제공되지 않습니다.</li>
+                        <li><strong>데이터 보존:</strong> 법령에 의해 보존할 의무가 있는 경우를 제외하고, 상기 명시된 보관 기간이 경과한 데이터는 복구 불가능한 방법으로 삭제됩니다.</li>
+                    </ul>
+
+                    <h4 class="font-bold text-brand-secondary mt-6 mb-2">4. 개인정보의 제3자 제공 및 위탁</h4>
+                    <p class="mb-2">"봇"은 이용자의 정보를 외부에 판매하거나 공유하지 않습니다. 단, 다음의 경우는 예외로 합니다.</p>
+                    <ul class="list-disc pl-5 space-y-1 mb-4">
+                        <li>법령에 따른 수사기관의 정당한 요청이 있는 경우</li>
+                        <li>음악 스트리밍을 위해 외부 API(YouTube, Spotify 등)를 호출하는 과정에서 식별할 수 없는 익명화된 정보가 전달되는 경우</li>
+                    </ul>
+
+                    <h4 class="font-bold text-brand-secondary mt-6 mb-2">5. 이용자의 권리 및 행사 방법</h4>
+                    <p class="mb-4">이용자는 본인의 데이터 처리에 관한 문의를 <a href="mailto:hoehoetvhs@kakao.com" class="text-brand-primary underline">이메일</a>과 <a href="https://discord.gg/HMFyw4xeeV" class="text-brand-primary underline" target="_blank">디스코드 서버</a>를 통해 하실 수 있습니다. 단, 데이터 파기는 설정된 주기(한 달 이내)에 따라 일괄적으로 진행됩니다.</p>
+
+                    <h4 class="font-bold text-brand-secondary mt-6 mb-2">6. 정책의 변경</h4>
+                    <p class="mb-4">본 방침은 서비스 업데이트 및 관련 법령의 변화에 따라 개정될 수 있습니다. 변경 사항은 웹 홈페이지와 디스코드 서버를 통해 안내합니다.</p>
+
+                    <div class="mt-8 pt-4 border-t border-gray-200 text-xs text-gray-400">
+                        <p>공고일자: 2026년 3월 22일</p>
+                        <p>시행일자: 2026년 3월 22일</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,7 +173,7 @@
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
             <div class="text-center md:text-left">
                 <div class="text-3xl font-black tracking-tighter mb-2">HOEENGBOT</div>
-                <p class="text-gray-400 text-sm font-bold">© 2026 HOEENGBOT. Designed for Community.</p>
+                <p class="text-gray-400 text-sm font-bold">© <span id="copyright-year">2023 - 2026</span> HOEENGBOT. Designed for Community.</p>
             </div>
             <div class="flex gap-8 font-bold text-sm tracking-widest uppercase">
                 <a href="https://discord.gg/your-invite" target="_blank" rel="noopener noreferrer" class="hover:text-brand-primary transition-colors">Discord</a>

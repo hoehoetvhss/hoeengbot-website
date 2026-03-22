@@ -17,4 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
   for (const el of document.querySelectorAll(".animate-on-scroll")) {
     observer.observe(el);
   }
+
+  const copyrightYear = document.getElementById("copyright-year");
+  if (copyrightYear) {
+    const currentYear = new Date().getFullYear();
+    copyrightYear.textContent = `2023 - ${currentYear}`;
+  }
 });
