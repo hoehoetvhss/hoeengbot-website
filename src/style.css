@@ -41,6 +41,33 @@
     @apply bg-off-white text-brand-secondary selection:bg-brand-primary selection:text-white;
     font-family: var(--font-seoul);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    letter-spacing: -0.02em;
+    line-height: 1.6;
+  }
+
+  ::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-off-white border-l-2 border-black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-primary border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)];
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-indigo-500;
+  }
+
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #6366f1 #f9fafb;
   }
 }
 
