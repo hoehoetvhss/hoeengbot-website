@@ -1,7 +1,6 @@
 {
   "name": "hoeengbot-website",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -19,13 +18,13 @@
   "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
-    "@biomejs/biome": "^2.4.8",
+    "@biomejs/biome": "^2.4.11",
     "@tailwindcss/vite": "^4.2.2",
     "autoprefixer": "^10.4.27",
-    "postcss": "^8.5.8",
+    "postcss": "^8.5.9",
     "tailwindcss": "^4.2.2",
-    "typescript": "^5.9.3",
-    "vite": "^8.0.1",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.8",
     "vite-plugin-ejs": "^1.7.0"
   }
 }
